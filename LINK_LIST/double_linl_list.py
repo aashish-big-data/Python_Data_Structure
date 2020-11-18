@@ -56,18 +56,6 @@ class LinkedList :
                        newNode.next=current
                        current.prev=newNode
 
-
-#####     node1->node2->node3
-#####     if current node is node2 
-#####     node1->newnode->node2->node3    
-#                       newNode.prev=current.prev   ## if current node is node2, newnode.prev will be pointing to node1
-#                       current.prev.next=newNode   ##node1.next will be pointing to newnode
-#                       newNode.next=current        ##newnode.next will be pointing to node2
-#                       current.prev=newNode        ##node2.prev will be pointing to newnode
- 
-
-
-
         def search(self, k):
                p = self.head
                if p is not None:
@@ -164,25 +152,24 @@ class LinkedList :
 			s += p.data
 		return s
 
-# example code
 l = LinkedList()
 
-l.insertAtBeg( 'a' )
+l.insertAtBeg( 'A' )
 print l
 print "inserting at beginning"
-l.insertAtBeg( 'b' )
+l.insertAtBeg( 'B' )
 print l
 print "inserting at beginning"
-l.insertAtBeg( 'c' )
+l.insertAtBeg( 'C' )
 print l
 print "inserting at end"
-l.insertAtEnd( 'd' )
+l.insertAtEnd( 'D' )
 print l
 print "inserting at end"
-l.insertAtEnd( 'e' )
+l.insertAtEnd( 'E' )
 print l
 print "inserting at end"
-l.insertAtEnd( 'f' )
+l.insertAtEnd( 'F' )
 print l
 print "inserting at pos 1"
 l.insertAtPos(1,'ZZZZZ')
